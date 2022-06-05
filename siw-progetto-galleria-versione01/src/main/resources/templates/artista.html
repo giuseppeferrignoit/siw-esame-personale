@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+	<head>  	
+		<meta charset="ISO-8859-1" name="viewport" content="width=device-width, initial-scale=1">
+		<title>Dettagli artista</title>
+		<link rel="stylesheet" href="../dettagli.css"/>    
+	</head> 
+
+	<body>
+	<header> 
+		<div id="titolo"><strong class="titolo">Dettagli artista</strong></div>
+	</header>
+	
+	<div class="sezione">
+		<p>
+			<span ><strong>Nome artista: </strong></span>
+			<span th:text="${chef.nome}">Nome generico</span>
+			<span><strong>  -  Cognome artista: </strong></span>
+			<span  th:text="${chef.cognome}">Cognome generico</span>
+			<span><strong>  -  Nazionalità artista: </strong></span>
+			<span  th:text="${chef.nazionalita}">Nazionalita generica</span>
+		</p>
+	</div>
+	
+	<div class="sezione">
+		<p>
+			<a th:href="@{'/artista' + '/' + ${artista.id} + '/' + 
+				'nuovoArtista'}" href="#"><strong class="conferma">Inserisci nuovo artista</strong></a>
+		</p>
+		<p>
+			<a th:href="@{'/artista' + '/' + ${artista.id} + '/' + 
+				'artisti'}" href="#"><strong class="conferma">Consulta artisti  accreditati</strong></a>
+		</p>
+	</div>
+
+	<div class="sezione">
+			<a href="/"><strong class="top">Home</strong></a>
+		</div>
+	</body>
+
+</html>
