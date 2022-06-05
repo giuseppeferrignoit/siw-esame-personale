@@ -18,7 +18,7 @@ import it.uniroma3.galleria.service.ArtistaService;
 import it.uniroma3.galleria.service.OperaService;
 import it.uniroma3.galleria.validator.ArtistaValidator;
 
-
+@Controller
 public class ArtistaController {
 	
 	@Autowired

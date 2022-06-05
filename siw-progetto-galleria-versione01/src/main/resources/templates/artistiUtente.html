@@ -4,7 +4,7 @@
 	<head>  	
 		<meta charset="ISO-8859-1" name="viewport" content="width=device-width, initial-scale=1">
 		<title>Elenco artisti accreditati - vista utente</title>
-		<link rel="stylesheet" href="/elenchi.css"/>  
+		<link rel="stylesheet" href="../elenchi.css"/>  
 	</head> 
 	
 	<body>
@@ -19,7 +19,7 @@
 					<p class="desc">
 						<span>
 							<a href="artistaUtente.html" th:href="@{'/artistaUtente' + '/' + ${artista.id}}"
-							   th:text="${artista.nome}">Artista</a>
+							   th:text="${artista.nome} + ' ' + ${artista.cognome}">Paolo Rossi</a>
 						</span>
 					</p>
 				</li>

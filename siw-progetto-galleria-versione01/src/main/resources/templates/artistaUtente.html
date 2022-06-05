@@ -15,13 +15,14 @@
 	<div class="sezione">
 		<p>
 			<span ><strong>Nome artista: </strong></span>
-			<span th:text="${chef.nome}">Nome generico</span>
+			<span th:text="${artista.nome}">Nome generico</span>
 			<span><strong>  -  Cognome artista: </strong></span>
-			<span  th:text="${chef.cognome}">Cognome generico</span>
+			<span  th:text="${artista.cognome}">Cognome generico</span>
 			<span><strong>  -  Nazionalità artista: </strong></span>
-			<span  th:text="${chef.nazionalita}">Nazionalita generica</span>
+			<span  th:text="${artista.nazionalita}">Nazionalita generica</span>
 		</p>
-		<p><a th:href="@{'/artistaUtente' + '/' + ${artista.id} + '/' + 
+		<p>
+			<a th:href="@{'/artistaUtente' + '/' + ${artista.id} + '/' + 
 				'opereUtente'}" href="#">Consulta opere dell'artista'</a>
 		</p>
 	</div>
