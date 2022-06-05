@@ -14,7 +14,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import javax.sql.DataSource;
 
 import static it.uniroma3.galleria.model.Credenziali.ADMIN_ROLE;
-//import static it.uniroma3.galleria.model.Credenziali.DEFAULT_ROLE;
+import static it.uniroma3.galleria.model.Credenziali.DEFAULT_ROLE;
 
 
 /**
