@@ -94,7 +94,7 @@ public class ArtistaController {
 		return "artista.html";
 	}
 	
-	// richiede un singolo chef tramite id per l'utente semplice
+	// richiede un singolo artista tramite id per l'utente semplice
 		@GetMapping("/artistaUtente/{id}")
 		public String getArtistaUtente(@PathVariable("id")Long id, Model model) {
 			// id è una variabile associata al path

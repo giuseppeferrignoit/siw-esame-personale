@@ -62,8 +62,8 @@ public class OperaService {
 	
 	public List<Opera> findAllByArtista(Artista artista) {
 		List<Opera> opere = new ArrayList<Opera>();
-		for(Opera o : operaRepository.findAllByArtista(artista)) {
-			opere.add(o);
+		for(Opera opera : operaRepository.findAllByArtista(artista)) {
+			opere.add(opera);
 		}
 		return opere;
 	}
