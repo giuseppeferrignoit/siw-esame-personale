@@ -21,10 +21,15 @@
 			<span><strong>  -  Nazionalità artista: </strong></span>
 			<span  th:text="${artista.nazionalita}">Nazionalita generica</span>
 		</p>
+		
 		<p>
 			<a th:href="@{'/artistaUtente' + '/' + ${artista.id} + '/' + 
-				'opereUtente'}" href="#">Consulta opere dell'artista'</a>
+				'opereUtente'}" href="#"><strong class="conferma">Consulta opere dell'artista</strong></a>
 		</p>
+		
+		
+		
+		
 	</div>
 
 	<div class="sezione">
